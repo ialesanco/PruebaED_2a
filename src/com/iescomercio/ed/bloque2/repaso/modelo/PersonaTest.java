@@ -20,8 +20,15 @@ class PersonaTest {
 	}
 
 	@Test
-	void testSetDni() {
-		fail("Not yet implemented");
+	void testSetDni() throws Exception {
+		try {
+			Persona p = new Persona("123456789", "Carlos", "Saenz");
+			p.setDni("123456781");
+			assertEquals("123456781", p.getDni());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Test
