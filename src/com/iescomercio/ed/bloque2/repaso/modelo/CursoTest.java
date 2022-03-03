@@ -44,7 +44,8 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		assertTrue(c.estaRegistrado("123456789"));
+		assertFalse(c.estaRegistrado("33333333"));
 	}
 
 	@Test
